@@ -1,21 +1,27 @@
 # RepoMan
 
-**TODO: Add description**
+Bulk delete GitHub repositories.
 
-## Installation
+##
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `repo_man` to your list of dependencies in `mix.exs`:
+* Clone this repository
 
-```elixir
-def deps do
-  [
-    {:repo_man, "~> 0.1.0"}
-  ]
-end
-```
+* Generate a GitHub auth [token](https://github.com/settings/tokens/new) with `delete_repo` permissions.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/repo_man](https://hexdocs.pm/repo_man).
+* Save the token in a file called `token.txt` in the root of the project.
+
+    #### `token.txt`
+    ```
+    xxxxx_your_token_xxxxxx
+    ```
+* Save a list of the repositories you want to delete in a file called `repos.txt` in the root of the project.
+
+    #### `repos.txt`
+    ```
+    username/repo1
+    username/repo2
+    username/repo3
+    etc...
+    ```
+* Run the application with `mix run --no-halt`
 
