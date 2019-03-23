@@ -14,13 +14,14 @@ Bulk delete GitHub repositories.
     ```
     xxxxx_your_token_xxxxxx
     ```
-* Save a list of the repositories you want to delete in a file called `repos.txt` in the root of the project.
+* Save a list of the repository names or URLs you want to delete in a file called `repos.txt` in the root of the project.
 
     #### `repos.txt`
     ```
     username/repo1
     username/repo2
     username/repo3
+    https://github.com/username/repo4 | Description of your repo
     etc...
     ```
 * Run the application with `mix run --no-halt`
