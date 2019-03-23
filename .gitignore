@@ -25,3 +25,4 @@ repo_man-*.tar
 /.elixir_ls/
 
 token.txt
+repos.txt
