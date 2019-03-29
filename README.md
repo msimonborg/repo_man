@@ -1,6 +1,6 @@
 # RepoMan
 
-Bulk delete GitHub repositories.
+Bulk delete GitHub repositories... concurrently.
 
 ##
 
@@ -24,4 +24,4 @@ Bulk delete GitHub repositories.
     https://github.com/username/repo4 | Description of your repo
     etc...
     ```
-* Run the application with `mix run --no-halt`
+* Run the application with `mix run -e "RepoMan.clean"`
