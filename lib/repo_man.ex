@@ -12,7 +12,7 @@ defmodule RepoMan do
     "repos.txt"
     |> File.stream!()
     |> Stream.map(&trim_repo/1)
-    |> Task.async_stream(&delete_repo/1)
+    |> Task.async_stream(&delete_repo/1, max_concurrency: 25)
     |> Stream.run()
   end
 
